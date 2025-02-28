@@ -26,7 +26,7 @@ To start the temperature sensor read interface run commands:
 
 All devices will apear in the folowing directory:
 
-    /sys/bus/w1/devices directory.
+    /sys/bus/w1/devices
 
 <img  src="images/2.png" width=400>
 
