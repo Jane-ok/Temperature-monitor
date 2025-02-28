@@ -1,4 +1,4 @@
 # Temperature-monitor
 Ambient temperature measurement
 
-<img  src="images/1.png" width=100>
+<img  src="images/1.png" width=400>
