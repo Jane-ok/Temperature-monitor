@@ -9,13 +9,14 @@ The black wire connects to ground. The yellow wire connects to a pull-up resisto
 The latest version of Raspbian (kernel 3.18) requires an addition to your /boot/config.txt file for the Pi
 to communicate with the DS18B20. Run the following to edit this file: 
 
-  $ sudo nano /boot/config.txt
+    $ sudo nano /boot/config.txt
 
 If the following line is not already in this file (if it is, it is likely at the bottom of the file), add it and save the file:
 
     dtoverlay=w1-gpio
 
 Restart your Pi for the changes to take effect:
+
     $ sudo reboot
 
 To start the temperature sensor read interface run commands:
@@ -23,7 +24,9 @@ To start the temperature sensor read interface run commands:
     $ sudo modprobe w1-gpio
     $ sudo modprobe w1-therm
 
-All devices will apear in /sys/bus/w1/devices directory.
+All devices will apear in the folowing directory:
+
+    /sys/bus/w1/devices directory.
 
 <img  src="images/2.png" width=400>
 
