@@ -10,15 +10,15 @@ The latest version of Raspbian (kernel 3.18) requires an addition to your /boot/
 to communicate with the DS18B20. Run the following to edit this file: 
   $ sudo nano /boot/config.txt
 
-If the following line is not already in this file (if it is, it is likely at the bottom of the file), add it and save the file.
-  dtoverlay=w1-gpio
+If the following line is not already in this file (if it is, it is likely at the bottom of the file), add it and save the file:
+    dtoverlay=w1-gpio
 
-Restart your Pi for the changes to take effect.
-  $ sudo reboot
+Restart your Pi for the changes to take effect:
+    $ sudo reboot
 
 To start the temperature sensor read interface run commands:
-  $ sudo modprobe w1-gpio
-  $ sudo modprobe w1-therm
+    $ sudo modprobe w1-gpio
+    $ sudo modprobe w1-therm
 
 All devices will apear in /sys/bus/w1/devices directory.
 
